@@ -130,6 +130,48 @@
     <Compile Include="ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\DetailEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\DetailEmployee.Designer.cs">
+      <DependentUpon>DetailEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeShiftBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeShiftBoard.Designer.cs">
+      <DependentUpon>EmployeeShiftBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeShiftList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeShiftList.Designer.cs">
+      <DependentUpon>EmployeeShiftList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\ImportEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\ImportEmployee.Designer.cs">
+      <DependentUpon>ImportEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,12 +220,6 @@
     <Compile Include="Master Data\Gender\Genderlist.Designer.cs">
       <DependentUpon>Genderlist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master Data\LeaveType\LeaveTypeList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Master Data\LeaveType\LeaveTypeList.Designer.cs">
-      <DependentUpon>LeaveTypeList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Master Data\LineCode\LineCodelist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +265,27 @@
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\DetailEmployee.resx">
+      <DependentUpon>DetailEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeShiftBoard.resx">
+      <DependentUpon>EmployeeShiftBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeShiftList.resx">
+      <DependentUpon>EmployeeShiftList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\ImportEmployee.resx">
+      <DependentUpon>ImportEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,9 +309,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master Data\Gender\Genderlist.resx">
       <DependentUpon>Genderlist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Master Data\LeaveType\LeaveTypeList.resx">
-      <DependentUpon>LeaveTypeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master Data\LineCode\LineCodelist.resx">
       <DependentUpon>LineCodelist.cs</DependentUpon>

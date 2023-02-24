@@ -64,21 +64,21 @@
             // 
             this.toolStripUsername.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripUsername.Name = "toolStripUsername";
-            this.toolStripUsername.Size = new System.Drawing.Size(156, 20);
+            this.toolStripUsername.Size = new System.Drawing.Size(127, 17);
             this.toolStripUsername.Text = "toolStripStatusLabel2";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(287, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(234, 17);
             this.toolStripStatusLabel1.Text = "Developed by IT-PE SMT Dept with ❤  | ";
             // 
             // dateTimeNow
             // 
             this.dateTimeNow.BackColor = System.Drawing.SystemColors.Control;
             this.dateTimeNow.Name = "dateTimeNow";
-            this.dateTimeNow.Size = new System.Drawing.Size(14, 20);
+            this.dateTimeNow.Size = new System.Drawing.Size(12, 17);
             this.dateTimeNow.Text = "-";
             // 
             // statusStrip1
@@ -90,16 +90,16 @@
             this.toolStripStatusLabel1,
             this.dateTimeNow,
             this.userdetail});
-            this.statusStrip1.Location = new System.Drawing.Point(3, 645);
+            this.statusStrip1.Location = new System.Drawing.Point(3, 649);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(913, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(913, 22);
             this.statusStrip1.TabIndex = 59;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // userdetail
             // 
             this.userdetail.Name = "userdetail";
-            this.userdetail.Size = new System.Drawing.Size(77, 20);
+            this.userdetail.Size = new System.Drawing.Size(64, 17);
             this.userdetail.Text = "userdetail";
             this.userdetail.Visible = false;
             // 
@@ -231,7 +231,7 @@
             this.cmbDepartment.Location = new System.Drawing.Point(22, 67);
             this.cmbDepartment.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(277, 27);
+            this.cmbDepartment.Size = new System.Drawing.Size(277, 23);
             this.cmbDepartment.TabIndex = 231;
             // 
             // label7
@@ -242,7 +242,7 @@
             this.label7.Location = new System.Drawing.Point(22, 32);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 19);
+            this.label7.Size = new System.Drawing.Size(69, 15);
             this.label7.TabIndex = 232;
             this.label7.Text = "Department";
             // 
@@ -250,12 +250,13 @@
             // 
             this.tbLineCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbLineCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbLineCode.Font = new System.Drawing.Font("Open Sans", 8.25F);
             this.tbLineCode.Location = new System.Drawing.Point(22, 144);
             this.tbLineCode.Margin = new System.Windows.Forms.Padding(4);
             this.tbLineCode.MaxLength = 30;
             this.tbLineCode.Name = "tbLineCode";
-            this.tbLineCode.Size = new System.Drawing.Size(277, 26);
+            this.tbLineCode.Size = new System.Drawing.Size(277, 22);
             this.tbLineCode.TabIndex = 188;
             // 
             // label5
@@ -266,7 +267,7 @@
             this.label5.Location = new System.Drawing.Point(18, 108);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 19);
+            this.label5.Size = new System.Drawing.Size(59, 15);
             this.label5.TabIndex = 189;
             this.label5.Text = "Line Code";
             // 
@@ -289,7 +290,7 @@
             this.label2.Location = new System.Drawing.Point(18, 174);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 19);
+            this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 190;
             this.label2.Text = "Description";
             // 
@@ -343,7 +344,7 @@
             this.totalLbl.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLbl.Location = new System.Drawing.Point(490, 393);
             this.totalLbl.Name = "totalLbl";
-            this.totalLbl.Size = new System.Drawing.Size(14, 19);
+            this.totalLbl.Size = new System.Drawing.Size(11, 15);
             this.totalLbl.TabIndex = 205;
             this.totalLbl.Text = "-";
             // 
@@ -355,7 +356,7 @@
             this.label3.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(376, 393);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 19);
+            this.label3.Size = new System.Drawing.Size(83, 15);
             this.label3.TabIndex = 204;
             this.label3.Text = "Total Records :";
             // 
@@ -382,7 +383,7 @@
             // 
             // LineCodelist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 674);
             this.Controls.Add(this.BackButton);

@@ -93,6 +93,99 @@ namespace NetrayaCanteen
             this.Hide();
         }
 
+        private void genderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Genderlist genderlist = new Genderlist();
+            genderlist.toolStripUsername.Text = toolStripUsername.Text;
+            genderlist.userdetail.Text = userdetail.Text;
+            genderlist.Show();
+            this.Hide();
+        }
+
+        private void employeeLevelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmployeeLevellist employeeLevellist = new EmployeeLevellist();
+            employeeLevellist.toolStripUsername.Text = toolStripUsername.Text;
+            employeeLevellist.userdetail.Text = userdetail.Text;
+            employeeLevellist.Show();
+            this.Hide();
+        }
+
+        private void departmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Departmentlist departmentlist = new Departmentlist();
+            departmentlist.toolStripUsername.Text = toolStripUsername.Text;
+            departmentlist.userdetail.Text = userdetail.Text;
+            departmentlist.Show();
+            this.Hide();
+        }
+
+        private void workAreaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkArealist workArealist = new WorkArealist();
+            workArealist.toolStripUsername.Text = toolStripUsername.Text;
+            workArealist.userdetail.Text = userdetail.Text;
+            workArealist.Show();
+            this.Hide();
+        }
+
+        private void lineCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LineCodelist lineCodelist = new LineCodelist();
+            lineCodelist.toolStripUsername.Text = toolStripUsername.Text;
+            lineCodelist.userdetail.Text = userdetail.Text;
+            lineCodelist.Show();
+            this.Hide();
+        }
+
+        private void sectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sectionlist sectionlist = new Sectionlist();
+            sectionlist.toolStripUsername.Text = toolStripUsername.Text;
+            sectionlist.userdetail.Text = userdetail.Text;
+            sectionlist.Show();
+            this.Hide();
+        }
+
+        private void shiftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Shiftlist shiftlist = new Shiftlist();
+            shiftlist.toolStripUsername.Text = toolStripUsername.Text;
+            shiftlist.userdetail.Text = userdetail.Text;
+            shiftlist.Show();
+            this.Hide();
+        }
+
+        private void deviceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Devicelist devicelist = new Devicelist();
+            devicelist.toolStripUsername.Text = toolStripUsername.Text;
+            devicelist.userdetail.Text = userdetail.Text;
+            devicelist.Show();
+            this.Hide();
+        }
+
+        private void emailTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmailTemplate emailTemplate = new EmailTemplate();
+            emailTemplate.userdetail.Text = userdetail.Text;
+            emailTemplate.ShowDialog();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            help.dateTimeNow(dateTimeNow);
+        }
+
+        private void listToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employeelist employeelist = new Employeelist();
+            employeelist.toolStripUsername.Text = toolStripUsername.Text;
+            employeelist.userdetail.Text = userdetail.Text;
+            employeelist.Show();
+            this.Hide();
+        }
+
         private void MainMenu_Load(object sender, EventArgs e)
         {
             //set full with taskbar below

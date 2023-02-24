@@ -11,6 +11,8 @@ namespace NetrayaCanteen
         readonly ConnectionDB connectionDB = new ConnectionDB();
         readonly Helper help = new Helper();
         string id, username, password, name, role, dept;
+        MySqlConnection myConn;
+
         public Login()
         {
             InitializeComponent();
@@ -83,6 +85,7 @@ namespace NetrayaCanteen
                         }
 
                         // update lastlogin data
+                        updateLastLogin(username);
 
                         MainMenu mm = new MainMenu();
                         mm.toolStripUsername.Text = "Welcome " + name + " " + username + ", " + role + " |";
@@ -106,6 +109,33 @@ namespace NetrayaCanteen
             else
             {
                 MessagesHelper.Info("Fill Username and Password field to Login");
+            }
+        }
+
+
+        private void updateLastLogin(string badgeId)
+        {
+            try
+            {
+                string koneksi = ConnectionDB.strProvider;
+                myConn = new MySqlConnection(koneksi);
+                var cmd = new MySqlCommand("", myConn);
+
+                myConn.Open();
+                // query update lastlog
+                string QueryUpdate = "UPDATE tbl_user SET lastLogin = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' WHERE username = '" + badgeId+"'";
+                cmd.CommandText = QueryUpdate;
+                cmd.ExecuteNonQuery();
+                myConn.Close();
+            }
+            catch (Exception ex)
+            {
+                myConn.Close();
+                //MessageBox.Show(ex.Message.ToString());
+            }
+            finally
+            {
+                myConn.Dispose();
             }
         }
     }

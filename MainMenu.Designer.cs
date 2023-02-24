@@ -50,7 +50,6 @@ namespace NetrayaCanteen
             this.sectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.publicHolidayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emailTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +58,7 @@ namespace NetrayaCanteen
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -136,7 +136,7 @@ namespace NetrayaCanteen
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
             this.listToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listToolStripMenuItem.Text = "List";
-            this.listToolStripMenuItem.Visible = false;
+            this.listToolStripMenuItem.Click += new System.EventHandler(this.listToolStripMenuItem_Click);
             // 
             // logEmployeeToolStripMenuItem
             // 
@@ -161,7 +161,6 @@ namespace NetrayaCanteen
             this.sectionToolStripMenuItem,
             this.shiftToolStripMenuItem,
             this.deviceToolStripMenuItem,
-            this.publicHolidayToolStripMenuItem,
             this.emailTemplateToolStripMenuItem});
             this.masterDataToolStripMenuItem.Name = "masterDataToolStripMenuItem";
             this.masterDataToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
@@ -170,62 +169,65 @@ namespace NetrayaCanteen
             // genderToolStripMenuItem
             // 
             this.genderToolStripMenuItem.Name = "genderToolStripMenuItem";
-            this.genderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.genderToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.genderToolStripMenuItem.Text = "Gender";
+            this.genderToolStripMenuItem.Click += new System.EventHandler(this.genderToolStripMenuItem_Click);
             // 
             // employeeLevelToolStripMenuItem
             // 
             this.employeeLevelToolStripMenuItem.Name = "employeeLevelToolStripMenuItem";
-            this.employeeLevelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeLevelToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.employeeLevelToolStripMenuItem.Text = "Employee Level";
+            this.employeeLevelToolStripMenuItem.Click += new System.EventHandler(this.employeeLevelToolStripMenuItem_Click);
             // 
             // departmentToolStripMenuItem
             // 
             this.departmentToolStripMenuItem.Name = "departmentToolStripMenuItem";
-            this.departmentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.departmentToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.departmentToolStripMenuItem.Text = "Department";
+            this.departmentToolStripMenuItem.Click += new System.EventHandler(this.departmentToolStripMenuItem_Click);
             // 
             // workAreaToolStripMenuItem
             // 
             this.workAreaToolStripMenuItem.Name = "workAreaToolStripMenuItem";
-            this.workAreaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.workAreaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.workAreaToolStripMenuItem.Text = "Work Area";
+            this.workAreaToolStripMenuItem.Click += new System.EventHandler(this.workAreaToolStripMenuItem_Click);
             // 
             // lineCodeToolStripMenuItem
             // 
             this.lineCodeToolStripMenuItem.Name = "lineCodeToolStripMenuItem";
-            this.lineCodeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lineCodeToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.lineCodeToolStripMenuItem.Text = "Line Code";
+            this.lineCodeToolStripMenuItem.Click += new System.EventHandler(this.lineCodeToolStripMenuItem_Click);
             // 
             // sectionToolStripMenuItem
             // 
             this.sectionToolStripMenuItem.Name = "sectionToolStripMenuItem";
-            this.sectionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sectionToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.sectionToolStripMenuItem.Text = "Section";
+            this.sectionToolStripMenuItem.Click += new System.EventHandler(this.sectionToolStripMenuItem_Click);
             // 
             // shiftToolStripMenuItem
             // 
             this.shiftToolStripMenuItem.Name = "shiftToolStripMenuItem";
-            this.shiftToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shiftToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.shiftToolStripMenuItem.Text = "Shift";
+            this.shiftToolStripMenuItem.Click += new System.EventHandler(this.shiftToolStripMenuItem_Click);
             // 
             // deviceToolStripMenuItem
             // 
             this.deviceToolStripMenuItem.Name = "deviceToolStripMenuItem";
-            this.deviceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deviceToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.deviceToolStripMenuItem.Text = "Device";
-            // 
-            // publicHolidayToolStripMenuItem
-            // 
-            this.publicHolidayToolStripMenuItem.Name = "publicHolidayToolStripMenuItem";
-            this.publicHolidayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.publicHolidayToolStripMenuItem.Text = "Public Holiday";
+            this.deviceToolStripMenuItem.Click += new System.EventHandler(this.deviceToolStripMenuItem_Click);
             // 
             // emailTemplateToolStripMenuItem
             // 
             this.emailTemplateToolStripMenuItem.Name = "emailTemplateToolStripMenuItem";
-            this.emailTemplateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.emailTemplateToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.emailTemplateToolStripMenuItem.Text = "Email Template";
+            this.emailTemplateToolStripMenuItem.Click += new System.EventHandler(this.emailTemplateToolStripMenuItem_Click);
             // 
             // administrationToolStripMenuItem
             // 
@@ -239,14 +241,14 @@ namespace NetrayaCanteen
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.userToolStripMenuItem.Text = "User";
             this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // userRoleToolStripMenuItem
             // 
             this.userRoleToolStripMenuItem.Name = "userRoleToolStripMenuItem";
-            this.userRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userRoleToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.userRoleToolStripMenuItem.Text = "User Role";
             this.userRoleToolStripMenuItem.Click += new System.EventHandler(this.userRoleToolStripMenuItem_Click);
             // 
@@ -276,6 +278,11 @@ namespace NetrayaCanteen
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,7 +292,7 @@ namespace NetrayaCanteen
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
-            this.Text = "MainMenu";
+            this.Text = "Netraya Canteen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.statusStrip1.ResumeLayout(false);
@@ -317,7 +324,6 @@ namespace NetrayaCanteen
         private System.Windows.Forms.ToolStripMenuItem sectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shiftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deviceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem publicHolidayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emailTemplateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
@@ -326,5 +332,6 @@ namespace NetrayaCanteen
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Timer timer;
     }
 }

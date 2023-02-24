@@ -65,7 +65,7 @@ namespace NetrayaCanteen.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _4V0b {
             get {
-                object obj = ResourceManager.GetObject("_4V0b", resourceCulture);
+                object obj = ResourceManager.GetObject("4V0b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +86,16 @@ namespace NetrayaCanteen.Properties {
         internal static System.Drawing.Bitmap icons8_home_page_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_page_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_import_file_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_import_file_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
